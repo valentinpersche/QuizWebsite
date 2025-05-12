@@ -1,5 +1,7 @@
 body{
     background-color: #007AFF !important;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .container{
@@ -42,4 +44,11 @@ body{
     text-align: center;
     font-size: 1.25rem;
     font-family: var(--bs-body-font-family);
+}
+
+.finished-card-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }

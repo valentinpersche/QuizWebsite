@@ -20,6 +20,7 @@
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
   </head>
   <body onload="init()">
     <nav class="navbar bg-body-tertiary">
@@ -38,6 +39,9 @@
         <div class="card-body" style="display: none" id="quiz-finished">
           <div class="finished-card-headline">Quiz beendet !</div>
           <div class="finished-card-text">Du hast <b id="correct-answers">0</b> von <b id="total-questions">5</b> Fragen richtig beantwortet.</div>
+          <div class="finished-card-button">
+          <button class="btn btn-outline-primary" onclick="location.reload()">Quiz neu starten</button>
+          </div>
         </div>
         <div class="card-body" id="quiz-active">
           <h5 class="card-title" id="question-text">Frage</h5>
