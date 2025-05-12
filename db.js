@@ -126,7 +126,7 @@ let questions = [
       correctAnswer: 3,
     },
     {
-      question: "Wie heißt die blau-weiße Katze aus der Defreggerstr. 2?",
+      question: "Wie heißt die blau-weiße Katze aus der Defreggerstr. 22?",
       answer1: "Elfi",
       answer2: "Lütton",
       answer3: "Elfie",

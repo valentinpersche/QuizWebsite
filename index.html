@@ -29,30 +29,83 @@
     </nav>
     <div class="container">
       <div class="card quiz-card">
-        <img src="./assets/img/Group 5.png" class="card-img-top" alt="..." />
-        <div class="card-body">
+        <img
+          id="quiz-image"
+          src="./assets/img/gehirn.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body" style="display: none" id="quiz-finished">
+          <div class="finished-card-headline">Quiz beendet !</div>
+          <div class="finished-card-text">Du hast <b id="correct-answers">0</b> von <b id="total-questions">5</b> Fragen richtig beantwortet.</div>
+        </div>
+        <div class="card-body" id="quiz-active">
           <h5 class="card-title" id="question-text">Frage</h5>
           <div class="card mb-2">
-            <div class="card-body answer-card" id="answer-1" onclick="checkAnswer(1)">Antwort 1</div>
+            <div
+              class="card-body answer-card"
+              id="answer-1"
+              onclick="checkAnswer(1)"
+            >
+              Antwort 1
+            </div>
           </div>
           <div class="card mb-2">
-            <div class="card-body answer-card" id="answer-2" onclick="checkAnswer(2)">Antwort 2</div>
+            <div
+              class="card-body answer-card"
+              id="answer-2"
+              onclick="checkAnswer(2)"
+            >
+              Antwort 2
+            </div>
           </div>
           <div class="card mb-2">
-            <div class="card-body answer-card" id="answer-3" onclick="checkAnswer(3)">Antwort 3</div>
+            <div
+              class="card-body answer-card"
+              id="answer-3"
+              onclick="checkAnswer(3)"
+            >
+              Antwort 3
+            </div>
           </div>
           <div class="card mb-2">
-            <div class="card-body answer-card" id="answer-4" onclick="checkAnswer(4)">Antwort 4</div>
+            <div
+              class="card-body answer-card"
+              id="answer-4"
+              onclick="checkAnswer(4)"
+            >
+              Antwort 4
+            </div>
           </div>
 
           <div class="question-footer">
             <span>
-              <b id="current-question">1</b> von <b id="question-number">5</b>
+              <b id="current-question-number">1</b> von <b id="total-questions-number">5</b>
               Fragen
             </span>
-            <button class="btn btn-outline-primary" onclick="nextQuestion()">
+            <button
+              class="btn btn-outline-primary"
+              onclick="nextQuestion()"
+              id="next-button"
+              disabled
+            >
               Nächste Frage
             </button>
+          </div>
+          <div
+            class="progress mt-3"
+            role="progressbar"
+            aria-label="Quiz-Fortschritt"
+            aria-valuenow="0"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="height: 20px"
+          >
+            <div
+              id="progress-bar"
+              class="progress-bar bg-primary progress-bar-striped progress-bar-animated"
+              style="width: 0%"
+            ></div>
           </div>
         </div>
       </div>
